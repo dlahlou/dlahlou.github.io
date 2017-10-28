@@ -976,7 +976,11 @@ $document.ready(function () {
    * @description Enables RD Google Maps plugin
    */
   if (plugins.rdGoogleMaps.length) {
-    $.getScript("//maps.google.com/maps/api/js?sensor=false&libraries=geometry,places&v=3.7", function () {
+    $.getScript("//maps.google.com/maps/api/js?v=3.exp&sensor=false", function () {
+
+      //http://maps.google.com/maps/api/geocode/xml?address=sydney&sensor=false
+
+      //http://maps.google.com/maps/api/js?sensor=false&libraries=geometry,places&v=3.7&_=1509193966943
       var head = document.getElementsByTagName('head')[0],
           insertBefore = head.insertBefore;
 
